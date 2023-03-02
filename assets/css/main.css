@@ -1,0 +1,46 @@
+body {
+  margin:40px auto;
+  max-width:650px;
+  line-height:1.6;
+  font-size:18px;
+  color:#444;
+  padding:0 10px
+}
+h1,h2,h3 {
+  line-height:1.2
+}
+/* table.tableizer-table {
+  font-size: 18px;
+  border: 1px solid #CCC;
+}
+.tableizer-table td {
+  padding: 4px;
+  margin: 3px;
+  border: 1px solid #CCC;
+} */
+.tableizer-table th {
+  background-color: #000000;
+  color: #FFF;
+  font-weight: bold;
+}
+img {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: grey;
+    color: white;
+}
+
+td, th {
+  border: solid 1px;
+  padding: 8px;
+}

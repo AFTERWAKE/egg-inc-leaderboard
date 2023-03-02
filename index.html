@@ -5,31 +5,183 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Egg Inc Leaderboard</title>
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="main.js"></script>
 </head>
 <body data-gr-c-s-loaded="true">
   <header>
     <h1>Egg Inc Leaderboard</h1>
     <aside></aside>
   </header>
-  <h2>Choose from the options below</h2>
-  <p>
-    <strong>Artifact Type</strong>
-  </p>
-  <p>
-    
-  </p>
-  <p>
-    <strong>Number of ships to display</strong>
-  </p>
-  <p>
+  <form name="artifacts-leaderboard" action="" method="GET">
+    <h2>Choose from the options below</h2>
+    <p>
+      <strong>Artifact Type</strong>
+    </p>
+    <!-- <p>
+      <label for="artifacts">Choose an artifact: </label>
+      <input list="artifacts" id="artifact" name="artifact">
+      <datalist id="artifacts">
+        <option value="gold">
+        <option value="tau">
+        <option value="titanium">
+        <option value="clarity">
+        <option value="lunar">
+        <option value="prophecy">
+        <option value="life">
+        <option value="quantum">
+        <option value="dilithium">
+        <option value="soul">
+        <option value="terra">
+        <option value="tachyon">
+        <option value="shell">
+        <option value="bob">
+        <option value="light">
+        <option value="deflector">
+        <option value="siab">
+        <option value="actuator">
+        <option value="monocle">
+        <option value="metronome">
+        <option value="feather">
+        <option value="chalice">
+        <option value="compass">
+        <option value="rainstick">
+        <option value="beak">
+        <option value="lens">
+        <option value="medallion">
+        <option value="gusset">
+        <option value="ankh">
+        <option value="brooch">
+        <option value="vial">
+        <option value="necklace">
+        <option value="totem">
+        <option value="cube">
+      </datalist>
+    </p> -->
+    <p>
+      <input type="radio" name="artifact" id="gold" value="gold"></input>
+      <label for="gold">gold</label>
 
-  </p>
-  <p>
-    <strong>Number of ships per person to display</strong>
-  </p>
-  <p>
+      <input type="radio" name="artifact" id="tau" value="tau"></input>
+      <label for="tau">tau</label>
 
-  </p>
+      <input type="radio" name="artifact" id="titanium" value="titanium"></input>
+      <label for="titanium">titanium</label>
+
+      <input type="radio" name="artifact" id="clarity" value="clarity"></input>
+      <label for="clarity">clarity</label>
+
+      <input type="radio" name="artifact" id="lunar" value="lunar"></input>
+      <label for="lunar">lunar</label>
+
+      <input type="radio" name="artifact" id="prophecy" value="prophecy"></input>
+      <label for="prophecy">prophecy</label>
+
+      <input type="radio" name="artifact" id="life" value="life"></input>
+      <label for="life">life</label>
+
+      <input type="radio" name="artifact" id="quantum" value="quantum"></input>
+      <label for="quantum">quantum</label>
+
+      <input type="radio" name="artifact" id="dilithium" value="dilithium"></input>
+      <label for="dilithium">dilithium</label>
+
+      <input type="radio" name="artifact" id="soul" value="soul"></input>
+      <label for="soul">soul</label>
+
+      <input type="radio" name="artifact" id="terra" value="terra"></input>
+      <label for="terra">terra</label>
+
+      <input type="radio" name="artifact" id="tachyon" value="tachyon"></input>
+      <label for="tachyon">tachyon</label>
+
+      <input type="radio" name="artifact" id="shell" value="shell"></input>
+      <label for="shell">shell</label>
+
+      <input type="radio" name="artifact" id="bob" value="bob"></input>
+      <label for="bob">bob</label>
+
+      <input type="radio" name="artifact" id="light" value="light"></input>
+      <label for="light">light</label>
+
+      <input type="radio" name="artifact" id="deflector" value="deflector"></input>
+      <label for="deflector">deflector</label>
+
+      <input type="radio" name="artifact" id="siab" value="siab"></input>
+      <label for="siab">siab</label>
+
+      <input type="radio" name="artifact" id="actuator" value="actuator"></input>
+      <label for="actuator">actuator</label>
+
+      <input type="radio" name="artifact" id="monocle" value="monocle"></input>
+      <label for="monocle">monocle</label>
+
+      <input type="radio" name="artifact" id="metronome" value="metronome"></input>
+      <label for="metronome">metronome</label>
+
+      <input type="radio" name="artifact" id="feather" value="feather"></input>
+      <label for="feather">feather</label>
+
+      <input type="radio" name="artifact" id="chalice" value="chalice"></input>
+      <label for="chalice">chalice</label>
+
+      <input type="radio" name="artifact" id="compass" value="compass"></input>
+      <label for="compass">compass</label>
+
+      <input type="radio" name="artifact" id="rainstick" value="rainstick"></input>
+      <label for="rainstick">rainstick</label>
+
+      <input type="radio" name="artifact" id="beak" value="beak"></input>
+      <label for="beak">beak</label>
+
+      <input type="radio" name="artifact" id="lens" value="lens"></input>
+      <label for="lens">lens</label>
+
+      <input type="radio" name="artifact" id="medallion" value="medallion"></input>
+      <label for="medallion">medallion</label>
+
+      <input type="radio" name="artifact" id="gusset" value="gusset"></input>
+      <label for="gusset">gusset</label>
+
+      <input type="radio" name="artifact" id="ankh" value="ankh"></input>
+      <label for="ankh">ankh</label>
+
+      <input type="radio" name="artifact" id="brooch" value="brooch"></input>
+      <label for="brooch">brooch</label>
+
+      <input type="radio" name="artifact" id="vial" value="vial"></input>
+      <label for="vial">vial</label>
+
+      <input type="radio" name="artifact" id="necklace" value="necklace"></input>
+      <label for="necklace">necklace</label>
+
+      <input type="radio" name="artifact" id="totem" value="totem"></input>
+      <label for="totem">totem</label>
+
+      <input type="radio" name="artifact" id="cube" value="cube"></input>
+      <label for="cube">cube</label>
+    </p>
+    <p>
+      <strong>Number of ships to display</strong>
+    </p>
+    <p>
+      <input type="number" id="numShips" name="numShips"
+      min="0" max="250" value="25"></input>
+      <label for="numShips"> ships</label>
+    </p>
+    <p>
+      <strong>Number of ships per person to display</strong>
+    </p>
+    <p>
+      <input type="number" id="numShips_person" name="numShips_person"
+      min="0" max="250" value="1"></input>
+      <label for="numShips_person"> ships per person</label>
+    </p>
+    <p>
+      <button type="button" onclick="fetchResults(this.form)">Submit</button>
+    </p>
+  </form>
+  <div id="result">
+  </div>
   <hr>
   <h2>Epilogue</h2>
   <p>
